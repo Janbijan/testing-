@@ -1,0 +1,23 @@
+package com.ebanking.master;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class Handlingframe {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver= new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("https://netbanking.hdfcbank.com/netbanking/");
+		driver.findElement(By.name("fldLoginUserId")).sendKeys("526714");
+		driver.close();
+		
+		
+
+	}
+
+}
